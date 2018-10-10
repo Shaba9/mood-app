@@ -1,0 +1,624 @@
+
+body {
+    margin: auto;
+    background-color: #A0A09F;
+    padding: 0;
+    height: 110vh;
+    width: auto;
+    font-family: sans-serif;
+    /* border: solid 2px #8B0000; */
+}
+
+header {
+    background-color: #BADA55;
+    height: 20vh;
+    /* border: solid 1px rgb(41, 15, 185); */
+    margin: 0;
+    padding: 0;
+}
+
+#menu, #sideNav{
+    display: none;
+}
+
+h1 {
+    color: #8B0000;
+    font-family: sans-serif;
+    font-size: 7vh;
+    float: left;
+    margin-left: 2vw;
+    margin-top: 7vh;
+}
+
+nav ul {
+    float: right;
+    margin-top: 11vh;
+    margin-right: 4vw;
+}
+
+li {
+    display: inline-block;
+    border: solid 1px #8B0000;
+    border-radius: 50%;
+    padding: 1vh 7vw;
+    color: #8B0000;
+    font-family: sans-serif;
+    background: white;
+    margin-right: 2vw;
+}
+
+#QA {
+    margin: auto;
+    margin-top: 0;
+    clear: both;
+    height: 75vh;
+    padding: 0;
+    width: 76vw;
+    height: 85vh;
+    text-align: center;
+    /* border: solid 2px rgb(218, 214, 19); */
+}
+
+h2 {
+    font-size: 10vh;
+    margin-top: 1vh;
+    /* border: solid 2px rgb(129, 3, 3); */
+}
+
+h3 {
+    color: rgb(58, 6, 126);
+    font-family: sans-serif;
+    font-size: 5vh;
+    /* border: solid 2px rgb(68, 4, 68); */
+    height: 10vh;
+    margin-top: 2vh;
+    margin-bottom: 0;
+    text-align: center;
+    width: 76vw;
+    display: block;
+}
+
+#question {
+    margin-top: 2vh;
+    padding: 0;
+}
+
+#answer, #answer ul{
+    height: 45vh;
+    width: 76vw;
+    padding: 0;
+    /* border: solid 2px rgb(233, 18, 136); */
+    margin: 0;
+}
+
+#ops li{
+    display: block;
+    width: 56vw;
+    margin: auto;
+    margin-top: 1.5vh;
+    border: solid 2px rgb(56, 201, 201);
+    padding: 2vh;
+    font-size: 2.5vh;
+}
+
+div ul li:hover {
+    background: rgb(220, 245, 137);
+    font-weight: bold;
+}
+
+.selected, .selected:hover, .selected:active {
+    background-color: #BADA55;
+    font-weight: bold;
+}
+
+button, .button {
+    display: inline-block;
+    margin: 2vh 1vw 0 0;
+    border-radius: 30%;
+    border-color: black;
+    box-shadow: 2px 5px black;
+    padding: 2vh 2vw;
+    background-color: #97DEFF;
+    color: #8B0000;
+    font-family: sans-serif;
+}
+
+li:hover {
+    background: rgb(133, 202, 235);
+    cursor: pointer;
+}
+
+button:hover, .active, .button:hover {
+    background-color: rgb(96, 177, 214);
+    color: white;
+    cursor: pointer;
+}
+
+:focus {
+    outline: none;
+}
+
+button:active {
+    box-shadow: 0 1px black;
+}
+
+button:disabled {
+    background-color: grey;
+    color: white;
+    border: none;
+    box-shadow: .5px 1px black;
+}
+
+#emoji {
+    display: block;
+    margin: auto;
+    margin-top: 7vh;
+    height: 150px;
+    width: 150px;
+}
+
+p {
+    color: #BADA55;
+    font-family: sans-serif;
+    font-size: 8vh;
+    margin-top: 3vh;
+}
+
+#summary {
+    /* border: solid 2px white; */
+    width: 80vw;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    clear: both;
+}
+
+#summary img {
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin: 2vh 2vw 1vh 0;
+}
+
+#summary p {
+    font-size: 4vh;
+    color: rgb(24, 99, 2);
+    -webkit-text-stroke: .5px black;
+}
+
+#summary a {
+    text-decoration: none;
+    -webkit-text-stroke: none;
+}
+
+#summary a:hover, #summar a:visited {
+    color: #8B0000;
+}
+
+#welcome {
+    display: inline;
+}
+
+h4 {
+    font-size: 6vh;
+    color: rgb(1, 2, 114);
+    -webkit-text-stroke: .5px black;
+    width: auto;
+    /* border: solid 2px white; */
+}
+
+#contact-content {
+    /* border: solid 2px orange; */
+    text-align: center;
+    width: auto;
+    height: 90vh;
+    float: left;
+    margin-top: 0;
+    margin-left: 15vw;
+}
+
+#contact-content h4 {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    clear: both;
+    margin-top: 2vh;
+    /* border: solid 2px yellow; */
+}
+
+.text-input {
+    background-color: rgb(192, 187, 187);
+    border: solid 2px rgb(22, 75, 6);
+    border-radius: 40%;
+    padding: 2vh 2vw;
+}
+
+[name = comment] {
+    padding: 5vh 5vw;
+    width: 15vw;
+    height: 15vh;
+}
+
+#Scale {
+    float: right;
+    /* border: solid 2px purple; */
+    margin: auto;
+    margin-right: 10vw;
+}
+
+#Scale2 {
+    display: none;
+}
+
+footer {
+    display: block;
+    height: 4vh;
+    text-align: center;
+    clear: both;
+    /* border: solid 2px #8B0000; */
+}
+
+#sideNav {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+/* #scale {
+    border: solid 2px purple;
+    clear: both;
+    float: left;
+    width: auto;
+    margin: 10vh 10vw;
+    padding: 0;
+}
+
+#emojiScale {
+    border: solid 2px brown;
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+#emojiScale img {
+    width: 60px;
+    height: 60px;
+    margin-right: 1vw;
+}
+
+#good {
+    background-color: rgb(9, 172, 9);
+    display: inline-block;
+    margin: 0;
+    margin-left: -.5vw;
+}
+
+#bad {
+    background-color: rgb(228, 25, 25);
+    display: inline-block;
+    padding: 0;
+}
+
+#good [alt = Happy] {
+    margin-right: 0;
+}
+
+#levelPointer {
+    border: solid 2px pink;
+    width: 10vw;
+    font-size: 3vh;
+    text-align: center;
+    margin: 0 0 0 14vw;
+    position: relative;
+    color: #8B0000;
+} */
+
+@media only screen and (max-width: 1370px) {
+    nav ul {
+        margin: 11vh 5vw;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    body {
+        height: 100vh;
+    }
+
+    #largeNav {
+        display: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        float: right;
+    }
+
+    #sideNav {
+        display: none;
+        position: absolute;
+        width: 30vw;
+        /* height: 41vh; */
+        padding: 0;
+        z-index: 1;
+        margin: 13vh 0 0 -15vw;
+        text-align: center;
+        border: solid 1px #8B0000;
+        border-radius: 0;
+        color: #8B0000;
+        font-family: sans-serif;
+        background: grey;
+    }
+    
+    #sideNav li{
+        display: block;
+        background: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+        margin: 0;
+        /* height: 10vh;  */
+        padding: 5vh .3vw;
+        text-align: center;
+        font-size: 3vh;
+    }
+
+    #home, #about {
+        border-top: none;
+        border-bottom: solid 1px #97DEFF;
+    }
+    
+    #sideNav a {
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+    
+    #sideNav li:hover, #sideNav .active {
+        background-color: rgb(96, 177, 214);
+    }
+
+    .show {
+        display: block;
+    }
+
+    #menu {
+        display: inline-block;
+        position: relative;
+        float: right;
+        margin-right: 7vw;
+        margin-left: 0;
+        border-radius: 30%;
+        border-color: #8B0000;
+        box-shadow: none;
+        padding: 3vh 4vw;
+        background-color: rgb(96, 200, 214);
+        color: #8B0000;
+        font-family: sans-serif;
+        font-size: 3vh;
+    }
+        
+    #menu:hover, #menu:active {
+        background-color: #97DEFF;
+    }
+
+    header {
+        height: 13vh;
+        padding: 0;
+    }
+
+    h1 {
+        margin-top: 5vh;
+        margin-left: 4vw;
+    }
+
+    #QA {
+        width: 80vw;
+    } 
+
+    #answer, #answer ul {
+        height: 55vh;
+        width: 80vw;
+    }
+
+    h2 {
+        font-size: 8vh;
+        width: 80vw;
+    }
+
+    h3 {
+        font-size: 3.8vh;
+        height: 8vh;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        width: 80vw;
+    }
+
+    #ops li {
+        margin-top: 1vh;
+        width: 60vw;
+        padding: 2vh;
+        font-size: 3vh;
+    }
+
+    #start, #next, #back, #revealMood {
+        padding: 3vh 4vw;
+        font-size: 2vh;
+    }
+
+    #summary {
+        width: 85vw;
+    }
+
+    #Scale {
+        display:none;
+    }
+
+    #Scale2 {
+        clear: both;
+        display: block;
+        margin: auto;
+        width: 300px;
+    }
+
+    #contact-content {
+        margin: auto;
+        float: none;
+        width: 85vw;
+        text-align: left;
+        margin-top: 5vh;
+        height: auto;
+        padding-bottom: 5vh;
+    }
+
+    [name = comment] {
+        padding: 5vh 5vw;
+        width: 70vw;
+        height: 15vh;
+    }
+
+    h4 {
+        text-align: left;
+        clear: both;
+        font-size: 5vh;
+    }
+
+    form {
+        font-size: 3vh;
+    }
+
+    #Scale {
+        float: none;
+    }
+
+    [value = Send] {
+        padding: 4vh 6vw;
+        font-size: 3vh;
+        margin: center;
+    }
+
+    footer {
+        margin-top: 5vh;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    h3 {
+        margin-bottom: 1vh;
+        width: 85vw;
+    }
+
+    h2 {
+        font-size: 5vh;
+        height: 7vh;
+        width: 85vw;
+        text-align: center;
+    }
+
+    #sideNav {
+        margin: 13vh 0 0 -17vw;
+    }
+
+    #QA {
+        width: 85vw;
+        height: 90vh;
+    } 
+
+    #answer #answer ul {
+        width: 85vw;
+    }
+
+    #ops li{
+        font-size: 2.5vh;
+        margin-top: 2vh;
+    }
+
+    button {
+        margin-right: 2vw;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    
+    header {
+        height: 11vh;
+    }
+
+    #menu {
+        padding: 2vh 2vw;
+        margin-right: 3vw;
+    }
+    
+    #QA {
+        width: 90vw;
+    }
+    
+    #sideNav {
+        margin: 11vh 0 0 -20vw;
+    }
+
+    h1 {
+        font-size: 5vh;
+    }
+
+    h2 {
+        width: 90vw;
+        margin-top: 0;
+    }
+
+    h3 {
+        font-size: 3vh;
+        width: 90vw;
+        text-align: center;
+        height: 9vh;
+        margin-top: 0;
+    }
+
+    #answer, #answer ul {
+        height: 60vh;
+        width: 90vw;
+    }
+
+    #ops li {
+        font-size: 2vh;
+    }
+
+    #start, #next, #back, #revealMood {
+        margin-right: 3vw;
+        font-size: 2vh;
+    }
+
+    p {
+        font-size: 5vh;
+    }
+
+    #summary {
+        width: 90vw;
+    }
+
+    #summary p {
+        font-size: 3vh;
+    }
+
+    h4 {
+        font-size: 4vh;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    #sideNav {
+        margin-left: -12vw;
+    }
+}

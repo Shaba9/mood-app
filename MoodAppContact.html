@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="MoodAppStyle.css" />
+</head>
+<body>
+    <header>
+        <h1>MoodApp</h1>
+        <nav>
+            <ul id="largeNav">
+                <a href="index.html"><li id="home">Home</li></a>
+                <a href="MoodAppAbout.html"><li id="about">About</li></a>
+                <a href="#"><li id="contact" class="active">Contact</li></a>
+            </ul>
+            <div class="dropdown">
+                <button id="menu" onclick="Menu()">Menu</button>
+                <ul id="sideNav" class="dropdown-content">
+                    <a href="index.html"><li id="home">Home</li></a>
+                    <a href="MoodAppAbout.html"><li id="about">About</li></a>
+                    <a href="#"><li id="contact" class="active">Contact</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <img id="Scale2" src="Emojis/EmojiScale2Ver.png" alt="Emoji Scale">
+    <div id="contact-content">
+        <h4>Contact:</h4>
+        <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+            Name:<br>
+            <input class="text-input" type="text" name="name"><br><br>
+            E-mail:<br>
+            <input class="text-input" type="text" name="email"><br><br>
+            Comment:<br>
+            <textarea class="text-input" name="comment" rows="20" cols="50"></textarea><br><br>
+            <input class="button" type="submit" value="Send">
+        </form>
+    </div>
+    <img id="Scale" src="Emojis/EmojiScaleHor.png" alt="Emoji Scale">
+    <!-- <div id="scale">
+        <h5 id="levelPointer">Must be at least this emotional to send a message<br>||<br>V</h5>
+        <div id="emojiScale">
+            <div id="bad">
+                <img src="Emojis/Annoyed.png" alt="Annoyed">
+                <img src="Emojis/Angry.png" alt="Angry">
+                <img src="Emojis/Dead.png" alt="Dead">
+            </div>
+            <div id="good">
+                <img src="Emojis/Playful.png" alt="Playful">
+                <img src="Emojis/Humorous.png" alt="Humorous">
+                <img src="Emojis/Happy.png" alt="Happy">
+            </div>
+        </div>
+    </div> -->
+    <footer>
+        Copyright!
+    </footer>    
+</body>
+</html>
+<script src="MoodApp 9-12.js"></script>

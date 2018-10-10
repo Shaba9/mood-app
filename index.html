@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="MoodAppStyle.css" />
+</head>
+<body>
+    <header>
+        <h1>MoodApp</h1>
+        <nav>
+            <ul id="largeNav">
+                <a href="#"><li id="home" class="active">Home</li></a>
+                <a href="MoodAppAbout.html"><li id="about">About</li></a>
+                <a href="MoodAppContact.html"><li id="contact">Contact</li></a>
+            </ul>
+            <div class="dropdown">
+                <button id="menu" onclick="Menu()">Menu</button>
+                <ul id="sideNav" class="dropdown-content">
+                    <a href="#"><li id="home" class="active">Home</li></a>
+                    <a href="MoodAppAbout.html"><li id="about">About</li></a>
+                    <a href="MoodAppContact.html"><li id="contact">Contact</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="QA">
+        <h3 id="question">Answer Some Questions to Reveal Your Mood:</h3>
+        <div id="answer"></div>
+        <button id="start">Get Started!</button>
+    </div>
+    <footer>
+        Copyright!
+    </footer>    
+</body>
+</html>
+<script src="MoodApp 10-10.js"></script>
