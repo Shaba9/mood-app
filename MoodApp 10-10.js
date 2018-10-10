@@ -5,13 +5,10 @@ var xhr = new XMLHttpRequest();
 
 xhr.onload = function () {
 	questions = JSON.parse(xhr.responseText)["questions"];
-	//console.log(emps);
 };
 
 xhr.open('GET', 'Questions.json', false);
 xhr.send(null);
-
-console.log(questions);
 
 var emoSource = {
 	"Alarmed": "Emojis/Alarmed.png",
@@ -99,7 +96,7 @@ function sel(k) {
 	ops.className = 'answered';
 	document.querySelectorAll("#ops li")[k].className = "selected";
 	answerLog[i] = k;
-	console.log(answerLog);
+	//console.log(answerLog);
 };
 
 function maxPlace(arr) {
@@ -171,7 +168,6 @@ btn.onclick = function () {
 		};
 		i += 1;
 		btn.disabled = true;
-		console.log(emoLog);
 		mood = Object.keys(emoLog)[maxPlace(Object.values(emoLog))];
 		emoji = "<img id = 'emoji' src =" + emoSource[mood] + ">";
 		message2 = "<p>You are currently " + mood + "!</p>";
@@ -191,8 +187,3 @@ function goBack() {
 		Reset();
 	};
 };
-
-// Fix mobil for Contact page.
-// Create a "start over" button on final page.
-// Access data externally from json file.
-// Remove borders.
